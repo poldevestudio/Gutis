@@ -1,0 +1,1918 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#11100f">
+    <title>Guti's — Burger, Beer & Drinks | Belén de Escobar</title>
+    <meta name="description" content="Guti's Burger, Beer & Drinks en Belén de Escobar. Hamburguesas artesanales de carne de ojo de bife, papas crocantes, cerveza artesanal tirada y coctelería. Complejo Villa Borguesa, RP25 Local 3.">
+
+    <!-- Open Graph / Redes Sociales & WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Guti's — Burger, Beer & Drinks | Belén de Escobar">
+    <meta property="og:description" content="Hamburguesas artesanales de carne 100% ojo de bife, cerveza tirada y barra de tragos en Villa Borguesa, Belén de Escobar. Hacé tu pedido directo por WhatsApp o visitanos.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:url" content="https://maps.app.goo.gl/oKqWUAHPPs1K6RfB7">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Schema.org Datos estructurados para Google (SEO Local) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BarOrPub",
+      "name": "Guti's Burger, Beer & Drinks",
+      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1100&q=90",
+      "servesCuisine": ["Burgers", "Carne Ojo de Bife", "Cerveza Artesanal", "Coctelería", "Papas Rústicas"],
+      "priceRange": "$$",
+      "telephone": "+5491126731952",
+      "hasMap": "https://maps.app.goo.gl/oKqWUAHPPs1K6RfB7",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Complejo Villa Borguesa, RP25 Local 3",
+        "addressLocality": "Belén de Escobar",
+        "addressRegion": "Buenos Aires",
+        "postalCode": "B1625",
+        "addressCountry": "AR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -34.3267988,
+        "longitude": -58.7593188
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "bestRating": "5"
+      },
+      "sameAs": [
+        "https://maps.app.goo.gl/oKqWUAHPPs1K6RfB7",
+        "https://www.instagram.com/gutis.escobar/"
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Wednesday", "Thursday"],
+          "opens": "19:30",
+          "closes": "01:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Friday"],
+          "opens": "19:30",
+          "closes": "02:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Saturday"],
+          "opens": "12:00",
+          "closes": "01:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Sunday"],
+          "opens": "12:00",
+          "closes": "02:00"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        /* ==========================================================================
+           VARIABLES GLOBALES & RESET
+           ========================================================================== */
+        :root {
+            --bg: #0e0f0c;
+            --panel: #171815;
+            --panel-hover: #20211d;
+            --cream: #f4ede1;
+            --muted: #a69f92;
+            --orange: #d4a359;
+            --orange-dark: #8c6328;
+            --gold: #e5b96a;
+            --line: rgba(255, 255, 255, 0.08);
+            --line-light: rgba(255, 255, 255, 0.14);
+            --wa-green: #25d366;
+            --wa-green-dark: #128c7e;
+            --radius-sm: 6px;
+            --radius-md: 12px;
+            --radius-lg: 18px;
+            --shadow-card: 0 16px 36px rgba(0, 0, 0, 0.35);
+            --container: 1200px;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--cream);
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            overflow-x: hidden;
+            width: 100%;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.2s ease, opacity 0.2s ease;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        button {
+            font: inherit;
+            border: none;
+            cursor: pointer;
+            background: none;
+        }
+
+        /* ==========================================================================
+           TOP BANNER & HEADER
+           ========================================================================== */
+        .announcement {
+            background: var(--orange);
+            color: #15130d;
+            text-align: center;
+            padding: 9px 16px;
+            font-size: 0.75rem;
+            letter-spacing: 0.16em;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 76px;
+            padding: 0 5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid var(--line);
+            z-index: 100;
+            background: rgba(17, 16, 15, 0.92);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Oswald', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            letter-spacing: 0.04em;
+        }
+
+        .logo-img {
+            width: 44px;
+            height: 44px;
+            object-fit: contain;
+            filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.45));
+            transition: transform 0.25s ease;
+        }
+
+        .logo:hover .logo-img {
+            transform: rotate(-6deg) scale(1.1);
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: #ded5ca;
+        }
+
+        nav a:not(.nav-cta):hover {
+            color: var(--gold);
+        }
+
+        /* ==========================================================================
+           MENÚ MOBILE & HAMBURGUESA
+           ========================================================================== */
+        .hamburger-btn {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            width: 44px;
+            height: 44px;
+            padding: 9px;
+            border-radius: var(--radius-sm);
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--line);
+            cursor: pointer;
+            z-index: 102;
+            transition: background 0.2s ease, border-color 0.2s ease;
+        }
+
+        .hamburger-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(212, 163, 89, 0.4);
+        }
+
+        .hamburger-btn .bar {
+            display: block;
+            width: 22px;
+            height: 2px;
+            background-color: var(--cream);
+            border-radius: 2px;
+            transition: transform 0.28s ease, opacity 0.2s ease, background-color 0.2s ease;
+            transform-origin: center;
+        }
+
+        /* Animación a 'X' cuando el menú está abierto */
+        .hamburger-btn.is-active {
+            background: rgba(212, 163, 89, 0.15);
+            border-color: var(--orange);
+        }
+
+        .hamburger-btn.is-active .bar:nth-child(1) {
+            transform: translateY(7px) rotate(45deg);
+            background-color: var(--orange);
+        }
+
+        .hamburger-btn.is-active .bar:nth-child(2) {
+            opacity: 0;
+            transform: scaleX(0);
+        }
+
+        .hamburger-btn.is-active .bar:nth-child(3) {
+            transform: translateY(-7px) rotate(-45deg);
+            background-color: var(--orange);
+        }
+
+        /* Fondo Oscuro / Overlay */
+        .mobile-nav-overlay {
+            position: fixed;
+            top: 76px;
+            left: 0;
+            width: 100%;
+            height: calc(100vh - 76px);
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            z-index: 98;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        .mobile-nav-overlay.is-active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Drawer Desplegable */
+        .mobile-nav-drawer {
+            position: fixed;
+            top: 76px;
+            left: 0;
+            width: 100%;
+            background: rgba(18, 16, 14, 0.98);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 2px solid rgba(212, 163, 89, 0.35);
+            box-shadow: 0 24px 48px rgba(0, 0, 0, 0.7);
+            z-index: 99;
+            transform: translateY(-110%);
+            opacity: 0;
+            visibility: hidden;
+            transition: transform 0.32s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease, visibility 0.32s;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 5% 24px;
+            gap: 12px;
+            max-height: calc(100vh - 86px);
+            overflow-y: auto;
+        }
+
+        .mobile-nav-drawer.is-active {
+            transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .mobile-nav-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .mobile-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 18px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--line);
+            border-radius: var(--radius-sm);
+            color: var(--cream);
+            font-size: 0.95rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            transition: background 0.2s, border-color 0.2s, color 0.2s;
+        }
+
+        .mobile-link:hover, .mobile-link:active {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.2);
+            color: var(--gold);
+        }
+
+        .mobile-link-highlight {
+            background: rgba(212, 163, 89, 0.12);
+            border-color: rgba(212, 163, 89, 0.35);
+            color: var(--gold);
+        }
+
+        .mobile-link-highlight:hover {
+            background: rgba(212, 163, 89, 0.22);
+            border-color: var(--orange);
+        }
+
+        .mobile-link-wa {
+            background: rgba(37, 211, 102, 0.1);
+            border-color: rgba(37, 211, 102, 0.3);
+            color: var(--wa-green);
+        }
+
+        .mobile-link-wa:hover {
+            background: rgba(37, 211, 102, 0.2);
+            border-color: var(--wa-green);
+            color: #ffffff;
+        }
+
+        .mobile-link-icon {
+            font-size: 1.15rem;
+            margin-right: 12px;
+        }
+
+        .mobile-link > span:nth-child(2) {
+            flex: 1;
+        }
+
+        .mobile-link-arrow {
+            color: var(--muted);
+            font-size: 1.1rem;
+        }
+
+        .mobile-nav-footer {
+            margin-top: 8px;
+            padding-top: 14px;
+            border-top: 1px solid var(--line);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            color: var(--muted);
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .mobile-nav-footer .tag-status {
+            color: var(--wa-green);
+            font-weight: 700;
+        }
+
+        @media (max-width: 820px) {
+            .desktop-nav {
+                display: none !important;
+            }
+            .hamburger-btn {
+                display: flex;
+            }
+        }
+
+        /* Botones Generales */
+        .button, .nav-cta {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px 22px;
+            border-radius: var(--radius-sm);
+            background: var(--orange);
+            color: #1c100b;
+            font-weight: 800;
+            font-size: 0.88rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            box-shadow: 0 4px 0 var(--orange-dark);
+            transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+        }
+
+        .button:hover, .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 0 var(--orange-dark);
+            background: #ff7642;
+        }
+
+        .button:active, .nav-cta:active {
+            transform: translateY(2px);
+            box-shadow: 0 2px 0 var(--orange-dark);
+        }
+
+        .button-secondary {
+            background: #25201b;
+            color: var(--cream);
+            border: 1px solid var(--line-light);
+            box-shadow: 0 4px 0 #120e0b;
+        }
+
+        .button-secondary:hover {
+            background: #2f2923;
+            box-shadow: 0 6px 0 #120e0b;
+            color: var(--gold);
+        }
+
+        .button-outline {
+            background: transparent;
+            color: #ffffff;
+            border: 2px solid var(--orange);
+            box-shadow: none;
+            padding: 12px 28px;
+            font-size: 0.92rem;
+            letter-spacing: 0.05em;
+        }
+
+        .button-outline:hover {
+            background: rgba(212, 163, 89, 0.12);
+            color: #ffffff;
+            border-color: #ff7642;
+            box-shadow: 0 0 18px rgba(212, 163, 89, 0.35);
+            transform: translateY(-2px);
+        }
+
+        .button-outline:active {
+            transform: translateY(1px);
+            background: rgba(212, 163, 89, 0.22);
+            box-shadow: none;
+        }
+
+        /* ==========================================================================
+           HERO SECTION
+           ========================================================================== */
+        .hero {
+            position: relative;
+            min-height: 600px;
+            padding: 60px 5% 70px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 40px;
+            max-width: var(--container);
+            margin: 0 auto;
+            overflow: visible;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            width: 480px;
+            height: 480px;
+            border: 1px solid rgba(255, 154, 77, 0.09);
+            border-radius: 50%;
+            right: 5%;
+            top: 8%;
+            box-shadow: 0 0 0 50px rgba(255, 154, 77, 0.04), 0 0 0 100px rgba(255, 154, 77, 0.02);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .hero-copy {
+            position: relative;
+            z-index: 2;
+        }
+
+        .kicker {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--gold);
+            font-size: 0.78rem;
+            font-weight: 800;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .kicker::before {
+            content: "";
+            width: 26px;
+            height: 2px;
+            background: var(--orange);
+        }
+
+        h1 {
+            font-family: 'Oswald', sans-serif;
+            text-transform: uppercase;
+            font-size: clamp(3.2rem, 5.8vw, 5.8rem);
+            line-height: 0.94;
+            letter-spacing: -0.02em;
+            margin: 12px 0 20px;
+        }
+
+        h1 .line2 {
+            display: block;
+            color: var(--orange);
+        }
+
+        h1 .outline {
+            -webkit-text-stroke: 1.5px var(--orange);
+            color: transparent;
+        }
+
+        .hero-copy > p {
+            color: var(--muted);
+            font-size: 1.05rem;
+            line-height: 1.7;
+            max-width: 460px;
+            margin-bottom: 28px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .mini-proof {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-top: 36px;
+            color: var(--muted);
+            font-size: 0.82rem;
+        }
+
+        .avatars {
+            display: flex;
+        }
+
+        .avatars span {
+            display: grid;
+            place-items: center;
+            width: 30px;
+            height: 30px;
+            border: 2px solid var(--bg);
+            border-radius: 50%;
+            background: #e8b678;
+            color: #28170c;
+            margin-left: -7px;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+
+        .avatars span:first-child { margin-left: 0; background: #f3d2a4; }
+        .avatars span:nth-child(2) { background: #c87948; }
+        .avatars span:nth-child(3) { background: #f0c65c; }
+
+        /* Visual Hero & Burger */
+        .hero-visual {
+            position: relative;
+            min-height: 440px;
+            display: grid;
+            place-items: center;
+            z-index: 1;
+        }
+
+        .glow {
+            position: absolute;
+            width: 360px;
+            height: 360px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(212, 163, 89, 0.25) 0%, rgba(212, 163, 89, 0.08) 50%, transparent 70%);
+            filter: blur(20px);
+            pointer-events: none;
+        }
+
+        .burger-photo {
+            position: relative;
+            width: 100%;
+            max-width: 480px;
+            z-index: 2;
+            transform: rotate(-4deg);
+            filter: drop-shadow(0 25px 25px rgba(0, 0, 0, 0.7));
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .burger-photo img {
+            width: 100%;
+            height: auto;
+            border-radius: var(--radius-lg);
+            object-fit: cover;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: rotate(-4deg) translateY(0); }
+            50% { transform: rotate(-2deg) translateY(-12px); }
+        }
+
+        .stamp {
+            position: absolute;
+            z-index: 3;
+            right: 0%;
+            top: 5%;
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            text-align: center;
+            background: var(--gold);
+            color: #23140b;
+            border: 4px solid #21150e;
+            outline: 2px dashed var(--gold);
+            outline-offset: 4px;
+            font-family: 'Oswald', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+            line-height: 1.1;
+            transform: rotate(12deg);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+        }
+
+        .floating-tag {
+            position: absolute;
+            z-index: 3;
+            left: -2%;
+            bottom: 6%;
+            background: rgba(37, 32, 27, 0.95);
+            border: 1px solid #5a4434;
+            border-radius: 8px;
+            padding: 12px 16px;
+            box-shadow: 0 14px 30px rgba(0, 0, 0, 0.5);
+            transform: rotate(-3deg);
+            backdrop-filter: blur(6px);
+        }
+
+        .floating-tag strong {
+            display: block;
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.05rem;
+            letter-spacing: 0.02em;
+        }
+
+        .floating-tag small {
+            color: var(--muted);
+            font-size: 0.75rem;
+        }
+
+        /* ==========================================================================
+           MARQUEE INFINITO (ANIMADO)
+           ========================================================================== */
+        .marquee {
+            overflow: hidden;
+            background: var(--orange);
+            color: #1a100b;
+            padding: 14px 0;
+            font-family: 'Oswald', sans-serif;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            font-size: 1.05rem;
+            white-space: nowrap;
+            user-select: none;
+            display: flex;
+        }
+
+        .marquee-track {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            animation: marquee 24s linear infinite;
+            min-width: 100%;
+        }
+
+        .marquee-track span {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        /* ==========================================================================
+           SECCIONES GENERALES & MENÚ
+           ========================================================================== */
+        .section-wrap {
+            max-width: var(--container);
+            margin: 0 auto;
+            padding: 85px 5%;
+        }
+
+        .section-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            gap: 25px;
+            margin-bottom: 45px;
+        }
+
+        .eyebrow {
+            font-size: 0.76rem;
+            color: var(--orange);
+            letter-spacing: 0.18em;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-family: 'Oswald', sans-serif;
+            font-size: clamp(2.4rem, 4.2vw, 3.8rem);
+            line-height: 1.02;
+            text-transform: uppercase;
+            letter-spacing: -0.015em;
+            margin: 8px 0 0;
+        }
+
+        .section-head p {
+            color: var(--muted);
+            max-width: 380px;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .menu-card {
+            background: linear-gradient(150deg, #231f1c 0%, #171513 100%);
+            border: 1px solid var(--line);
+            border-radius: var(--radius-md);
+            padding: 16px;
+            position: relative;
+            transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .menu-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(212, 163, 89, 0.5);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+        }
+
+        .menu-photo {
+            height: 220px;
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+            background: #25201c;
+        }
+
+        .menu-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.35s ease;
+        }
+
+        .menu-card:hover .menu-photo img {
+            transform: scale(1.06);
+        }
+
+        .card-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(17, 16, 15, 0.85);
+            color: var(--gold);
+            border: 1px solid rgba(255, 194, 71, 0.4);
+            padding: 4px 9px;
+            border-radius: 4px;
+            font-size: 0.68rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            backdrop-filter: blur(4px);
+        }
+
+        .card-body {
+            padding: 18px 6px 6px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .card-label {
+            font-size: 0.7rem;
+            letter-spacing: 0.14em;
+            color: var(--gold);
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        .card-body h3 {
+            font-family: 'Oswald', sans-serif;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            margin: 6px 0 10px;
+            letter-spacing: 0.02em;
+        }
+
+        .card-body p {
+            font-size: 0.88rem;
+            color: var(--muted);
+            line-height: 1.6;
+            margin-bottom: 18px;
+            flex-grow: 1;
+        }
+
+        .card-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-top: 1px solid var(--line);
+            padding-top: 14px;
+        }
+
+        .card-cta-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 10px 14px;
+            background: #25201b;
+            color: var(--cream);
+            border-radius: 6px;
+            font-size: 0.82rem;
+            font-weight: 800;
+            letter-spacing: 0.05em;
+            border: 1px solid var(--line-light);
+            transition: background 0.2s, color 0.2s, border-color 0.2s;
+        }
+
+        .card-cta-btn span.plus {
+            display: grid;
+            place-items: center;
+            width: 26px;
+            height: 26px;
+            background: var(--orange);
+            color: #1a100a;
+            border-radius: 4px;
+            font-size: 1rem;
+            margin-left: 8px;
+        }
+
+        .card-cta-btn:hover {
+            background: var(--orange);
+            color: #17110c;
+            border-color: var(--orange);
+        }
+
+        .card-cta-btn:hover span.plus {
+            background: #17110c;
+            color: var(--orange);
+        }
+
+        /* ==========================================================================
+           BANNER DE ACCIÓN DESTACADA
+           ========================================================================== */
+        .feature-banner {
+            max-width: var(--container);
+            margin: 0 auto;
+            padding: 0 5%;
+        }
+
+        .banner-inner {
+            border-radius: var(--radius-lg);
+            background: linear-gradient(110deg, rgba(212, 163, 89, 0.5) 0%, rgba(219, 70, 29, 0.5) 100%);
+            color: var(--cream);
+            padding: 44px 6%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 28px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35);
+            border: 1px solid rgba(212, 163, 89, 0.3);
+        }
+
+        .banner-inner::after {
+            content: "🍟";
+            position: absolute;
+            font-size: 10rem;
+            right: 22%;
+            top: -20px;
+            opacity: 0.15;
+            transform: rotate(-16deg);
+            pointer-events: none;
+        }
+
+        .banner-inner h2 {
+            position: relative;
+            z-index: 1;
+            font-size: clamp(2rem, 3.6vw, 3.2rem);
+            margin: 0 0 10px;
+            color: var(--cream);
+        }
+
+        .banner-inner p {
+            position: relative;
+            z-index: 1;
+            max-width: 520px;
+            line-height: 1.6;
+            font-size: 0.95rem;
+            color: var(--muted);
+            font-weight: 400;
+        }
+
+        .banner-inner .button {
+            position: relative;
+            z-index: 2;
+            background: #17120e;
+            color: var(--cream);
+            box-shadow: 0 4px 0 #000;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
+        .banner-inner .button:hover {
+            background: #25201b;
+            color: var(--gold);
+        }
+
+        /* ==========================================================================
+           HISTORIA & IDENTIDAD
+           ========================================================================== */
+        .story {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 55px;
+            align-items: center;
+        }
+
+        .story-art {
+            min-height: 420px;
+            height: 100%;
+            position: relative;
+            border: 1px solid var(--line-light);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-card);
+            background: #171513;
+        }
+
+        .story-img {
+            width: 100%;
+            height: 100%;
+            min-height: 420px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+
+        .story-art:hover .story-img {
+            transform: scale(1.04);
+        }
+
+        .story-art .side-note {
+            position: absolute;
+            bottom: 22px;
+            left: 22px;
+            background: var(--gold);
+            color: #23140b;
+            padding: 10px 16px;
+            border-radius: 4px;
+            font-family: 'Oswald', sans-serif;
+            font-size: 0.92rem;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            transform: rotate(-3deg);
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.5);
+            z-index: 2;
+        }
+
+        .story-copy h2 {
+            font-size: clamp(2.5rem, 4.2vw, 4rem);
+            line-height: 1;
+            margin: 12px 0 20px;
+        }
+
+        .story-copy h2 span {
+            color: var(--orange);
+        }
+
+        .story-copy p {
+            color: var(--muted);
+            line-height: 1.8;
+            font-size: 0.98rem;
+            margin-bottom: 14px;
+        }
+
+        .perks {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 26px;
+        }
+
+        .perk-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            border: 1px solid var(--line-light);
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 6px;
+            padding: 10px 14px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: #e7dbce;
+        }
+
+        /* ==========================================================================
+           UBICACIÓN & MAPA INTERACTIVO (FICHA GOOGLE MAPS CON PIN ROJO)
+           ========================================================================== */
+        .map-section {
+            background: linear-gradient(180deg, var(--bg) 0%, #151311 100%);
+            border-top: 1px solid var(--line);
+        }
+
+        .map-layout {
+            display: grid;
+            grid-template-columns: 400px 1fr;
+            gap: 30px;
+            align-items: stretch;
+            margin-top: 35px;
+        }
+
+        .map-card-info {
+            background: var(--panel);
+            border: 1px solid var(--line-light);
+            border-radius: var(--radius-md);
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            box-shadow: var(--shadow-card);
+        }
+
+        .rating-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 194, 71, 0.12);
+            border: 1px solid rgba(255, 194, 71, 0.35);
+            padding: 8px 14px;
+            border-radius: 50px;
+            color: var(--gold);
+            font-size: 0.84rem;
+            font-weight: 700;
+            width: fit-content;
+        }
+
+        .rating-chip .stars {
+            letter-spacing: 2px;
+            color: var(--gold);
+        }
+
+        .info-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+        }
+
+        .info-row .pin-icon {
+            font-size: 1.4rem;
+            line-height: 1;
+            padding-top: 2px;
+            flex-shrink: 0;
+        }
+
+        .info-row h4 {
+            font-family: 'Oswald', sans-serif;
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            letter-spacing: 0.04em;
+            margin-bottom: 4px;
+            color: var(--cream);
+        }
+
+        .info-row p {
+            color: var(--muted);
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        .info-row a {
+            color: var(--gold);
+            font-weight: 700;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        .info-row a:hover {
+            color: var(--orange);
+        }
+
+        .tag-active-hours {
+            display: inline-block;
+            background: rgba(37, 211, 102, 0.12);
+            color: var(--wa-green);
+            border: 1px solid rgba(37, 211, 102, 0.3);
+            font-size: 0.72rem;
+            font-weight: 800;
+            padding: 3px 8px;
+            border-radius: 4px;
+            margin-top: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .btn-maps-action {
+            margin-top: auto;
+            width: 100%;
+            padding: 14px 18px;
+            background: var(--orange);
+            color: #1a0f08;
+            font-weight: 800;
+            font-size: 0.88rem;
+            letter-spacing: 0.05em;
+            border-radius: var(--radius-sm);
+            text-align: center;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            box-shadow: 0 4px 0 var(--orange-dark);
+        }
+
+        .btn-maps-action:hover {
+            background: #ff7642;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 0 var(--orange-dark);
+        }
+
+        .map-frame-wrapper {
+            position: relative;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            border: 1px solid var(--line-light);
+            background: #171513;
+            box-shadow: var(--shadow-card);
+            min-height: 420px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .map-frame-wrapper iframe {
+            width: 100%;
+            height: 100%;
+            min-height: 420px;
+            border: 0;
+            display: block;
+            flex-grow: 1;
+        }
+
+        .map-pin-overlay {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            z-index: 2;
+            background: rgba(23, 20, 18, 0.94);
+            border: 1px solid var(--line-light);
+            border-left: 4px solid #ea4335; /* Rojo oficial del pin de Google */
+            padding: 10px 16px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            backdrop-filter: blur(8px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .map-pin-overlay .red-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #ea4335;
+            box-shadow: 0 0 0 4px rgba(234, 67, 53, 0.25);
+            animation: pulse-dot 2s infinite;
+        }
+
+        @keyframes pulse-dot {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(234, 67, 53, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(234, 67, 53, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(234, 67, 53, 0); }
+        }
+
+        .map-pin-overlay span {
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: var(--cream);
+        }
+
+        /* ==========================================================================
+           SECCIÓN DE PEDIDOS (CTA FINAL)
+           ========================================================================== */
+        .order-section {
+            text-align: center;
+            background: radial-gradient(ellipse at 50% 0%, rgba(88, 44, 28, 0.4) 0%, transparent 70%), #171412;
+            padding: 90px 5%;
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+        }
+
+        .order-wrap {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        .order-section h2 {
+            font-size: clamp(2.8rem, 5.5vw, 4.8rem);
+            line-height: 1;
+            margin: 14px 0 18px;
+        }
+
+        .order-section h2 span {
+            color: var(--orange);
+        }
+
+        .order-section p {
+            color: var(--muted);
+            font-size: 1.05rem;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        .btn-whatsapp-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: var(--wa-green);
+            color: #ffffff;
+            font-size: 1.05rem;
+            font-weight: 800;
+            letter-spacing: 0.03em;
+            padding: 16px 32px;
+            border-radius: var(--radius-sm);
+            box-shadow: 0 6px 0 var(--wa-green-dark), 0 12px 28px rgba(37, 211, 102, 0.25);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn-whatsapp-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 9px 0 var(--wa-green-dark), 0 16px 32px rgba(37, 211, 102, 0.35);
+        }
+
+        .btn-whatsapp-cta:active {
+            transform: translateY(2px);
+            box-shadow: 0 3px 0 var(--wa-green-dark);
+        }
+
+        .btn-whatsapp-cta svg {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+        }
+
+        .contact-hints {
+            margin-top: 35px;
+            color: #a79a8b;
+            font-size: 0.84rem;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* ==========================================================================
+           FOOTER
+           ========================================================================== */
+        footer {
+            max-width: var(--container);
+            margin: 0 auto;
+            padding: 35px 5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        footer small {
+            color: #8d8175;
+            font-size: 0.8rem;
+        }
+
+        .social-link {
+            color: var(--gold);
+            font-size: 0.85rem;
+            font-weight: 800;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .social-link:hover {
+            color: var(--orange);
+        }
+
+        /* ==========================================================================
+           BOTÓN FLOTANTE WHATSAPP (CONVERSIÓN DIRECTA 24/7)
+           ========================================================================== */
+        .whatsapp-floating {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--wa-green);
+            color: #ffffff;
+            padding: 12px 20px 12px 14px;
+            border-radius: 50px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45), 0 0 0 0 rgba(37, 211, 102, 0.5);
+            font-weight: 800;
+            font-size: 0.88rem;
+            letter-spacing: 0.02em;
+            animation: pulse-ring 2.8s infinite;
+            transition: transform 0.2s ease;
+        }
+
+        .whatsapp-floating:hover {
+            transform: scale(1.05);
+            color: #ffffff;
+        }
+
+        .whatsapp-floating svg {
+            width: 28px;
+            height: 28px;
+            fill: #ffffff;
+            flex-shrink: 0;
+        }
+
+        @keyframes pulse-ring {
+            0% { box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45), 0 0 0 0 rgba(37, 211, 102, 0.6); }
+            70% { box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45), 0 0 0 16px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45), 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+
+        /* ==========================================================================
+           RESPONSIVE DESIGN (MOBILE-FIRST POLISH)
+           ========================================================================== */
+        @media (max-width: 960px) {
+            .hero {
+                grid-template-columns: 1fr;
+                text-align: center;
+                padding-top: 45px;
+                padding-bottom: 50px;
+                gap: 35px;
+            }
+
+            .hero-copy {
+                margin: 0 auto;
+                max-width: 580px;
+            }
+
+            .hero-copy > p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .kicker {
+                justify-content: center;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .mini-proof {
+                justify-content: center;
+            }
+
+            .hero-visual {
+                min-height: 380px;
+                max-width: 440px;
+                margin: 0 auto;
+                width: 100%;
+            }
+
+            .menu-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .story {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .map-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 680px) {
+            .announcement {
+                font-size: 0.65rem;
+                letter-spacing: 0.1em;
+                padding: 8px 12px;
+            }
+
+            header {
+                height: 66px;
+                padding: 0 4%;
+            }
+
+            .mobile-nav-overlay,
+            .mobile-nav-drawer {
+                top: 66px;
+                height: calc(100vh - 66px);
+            }
+
+            .logo {
+                font-size: 1.25rem;
+            }
+
+            .logo-img {
+                width: 36px;
+                height: 36px;
+            }
+
+            .hero {
+                padding: 35px 4% 45px;
+            }
+
+            h1 {
+                font-size: clamp(2.8rem, 12vw, 3.8rem);
+                line-height: 0.98;
+            }
+
+            .hero-visual {
+                min-height: 300px;
+            }
+
+            .burger-photo {
+                max-width: 310px;
+            }
+
+            .stamp {
+                width: 86px;
+                height: 86px;
+                font-size: 0.76rem;
+                top: 0;
+                right: -4px;
+            }
+
+            .floating-tag {
+                left: 0;
+                bottom: 2%;
+                padding: 8px 12px;
+            }
+
+            .floating-tag strong {
+                font-size: 0.88rem;
+            }
+
+            .floating-tag small {
+                font-size: 0.68rem;
+            }
+
+            .section-wrap {
+                padding: 55px 4%;
+            }
+
+            .section-head {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+                margin-bottom: 30px;
+            }
+
+            .menu-grid {
+                grid-template-columns: 1fr;
+                gap: 18px;
+            }
+
+            .menu-photo {
+                height: 200px;
+            }
+
+            .banner-inner {
+                flex-direction: column;
+                text-align: center;
+                padding: 36px 20px;
+            }
+
+            .banner-inner h2 {
+                font-size: 2rem;
+            }
+
+            .banner-inner::after {
+                display: none;
+            }
+
+            .banner-inner .button {
+                width: 100%;
+            }
+
+            .story-art, .story-img {
+                min-height: 280px;
+            }
+
+            .map-card-info {
+                padding: 22px 18px;
+            }
+
+            .map-frame-wrapper {
+                min-height: 340px;
+            }
+
+            .map-frame-wrapper iframe {
+                min-height: 340px;
+            }
+
+            .order-section {
+                padding: 65px 4%;
+            }
+
+            .btn-whatsapp-cta {
+                width: 100%;
+                justify-content: center;
+                padding: 15px 20px;
+                font-size: 0.95rem;
+            }
+
+            .contact-hints {
+                flex-direction: column;
+                gap: 12px;
+                align-items: center;
+            }
+
+            footer {
+                flex-direction: column;
+                text-align: center;
+                gap: 16px;
+                padding: 30px 4% 90px;
+            }
+
+            .whatsapp-floating span.wa-text {
+                display: none;
+            }
+
+            .whatsapp-floating {
+                padding: 14px;
+                border-radius: 50%;
+                bottom: 20px;
+                right: 20px;
+            }
+
+            .whatsapp-floating svg {
+                width: 32px;
+                height: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Barra de Navegación -->
+    <header>
+        <a href="#inicio" class="logo" aria-label="Inicio Guti's">
+            <img src="gutis_logo.png" alt="Logo Guti's Burger, Beer & Drinks" class="logo-img">
+            <span>GUTI'S<span style="color:var(--orange)">.</span></span>
+        </a>
+        <nav class="desktop-nav" aria-label="Navegación principal">
+            <a href="menu.html" style="color:var(--gold); font-weight:700;">MENÚ ONLINE</a>
+            <a href="#historia">NUESTRA ONDA</a>
+            <a href="#ubicacion">CÓMO LLEGAR</a>
+        </nav>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </header>
+
+    <!-- Menú Desplegable Mobile -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true"></div>
+    <div class="mobile-nav-drawer" id="mobileMenu" aria-label="Menú móvil" aria-hidden="true">
+        <div class="mobile-nav-links">
+            <a href="menu.html" class="mobile-link mobile-link-highlight">
+                <span>Menú Online & Pedidos</span>
+                <span class="mobile-link-arrow">↗</span>
+            </a>
+            <a href="#historia" class="mobile-link">
+                <span>Nuestra Onda</span>
+                <span class="mobile-link-arrow">↓</span>
+            </a>
+            <a href="#ubicacion" class="mobile-link">
+                <span>Cómo Llegar (GPS)</span>
+                <span class="mobile-link-arrow">↓</span>
+            </a>
+        </div>
+        <div class="mobile-nav-footer">
+            <span>Villa Borguesa, RP25 · Belén de Escobar</span>
+            <span class="tag-status">Mié a Dom desde 19:30 hs</span>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="inicio" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <div class="kicker">Burger, Beer & Drinks · Belén de Escobar</div>
+                <h1 id="hero-title">
+                    NO ES<br>CUALQUIERA.
+                    <span class="line2">ES <span class="outline">GUTI'S.</span></span>
+                </h1>
+                <p>
+                    Hamburguesas artesanales de carne 100% ojo de bife, cerveza artesanal tirada bien fría y barra de coctelería en Villa Borguesa. El punto de encuentro de Belén de Escobar.
+                </p>
+                <div class="hero-buttons">
+                    <a class="button button-outline" href="menu.html">
+                        PEDÍ <span>↗</span>
+                    </a>
+                </div>  
+                <div class="mini-proof">
+                    <span> 4.7 ⭐ · Carne 100% Ojo de Bife ·</span>
+                </div>
+            </div>
+
+            <div class="hero-visual" aria-hidden="true">
+                <div class="glow"></div>
+                <div class="burger-photo">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1000&q=85" alt="Hamburguesa artesanal Guti's con carne de ojo de bife y queso cheddar">
+                </div>
+                <div class="stamp">
+                    OJO<br>DE<br>BIFE
+                </div>
+            </div>
+        </section>
+
+        <!-- Marquee Ticker Infinito -->
+        <div class="marquee" aria-hidden="true">
+            <div class="marquee-track">
+                <span>✳ 100% CARNE OJO DE BIFE</span>
+                <span>✳ CERVEZA ARTESANAL TIRADA</span>
+                <span>✳ COCTELERÍA & TRAGOS DE AUTOR</span>
+                <span>✳ VILLA BORGUESA · ESCOBAR</span>
+                <span>✳ DELIVERY & TAKE AWAY</span>
+                <span>✳ BURGERS CON ACTITUD</span>
+                <span>✳ PAPAS REJILLA CROCANTES</span>
+                <span>✳ 4.7 ⭐ EN GOOGLE MAPS</span>
+                <span>✳ PEDILAS ONLINE!</span>
+                <span>✳ HAPPY HOUR & AMIGOS</span>
+            </div>
+        </div>
+
+        <!-- Sección de Menú -->
+        <section class="section-wrap" id="menu" style="padding-bottom: 30px;" aria-labelledby="menu-title">
+            <div class="section-head" style="margin-bottom: 25px;">
+                <div>
+                    <span class="eyebrow">EL MENÚ · BURGER, BEER & DRINKS</span>
+                    <h2 id="menu-title">EL ANTOJO<br>NO ESPERA.</h2>
+                </div>
+                <p>
+                    Arrancá por tu burger de ojo de bife favorita, sumá papas rústicas o rejilla y acompañalo con una pinta artesanal o un trago de autor. Podés armar tu comanda con carrito y mandarla directo a cocina.
+                </p>
+            </div>
+
+            <div style="background: linear-gradient(135deg, #1b1917 0%, #131210 100%); border: 1px solid rgba(212, 163, 89, 0.25); border-radius: var(--radius-lg); padding: 36px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px; box-shadow: 0 16px 36px rgba(0,0,0,0.4);">
+                <div style="max-width: 580px;">
+                    <h3 style="font-family: 'Oswald', sans-serif; font-size: clamp(1.6rem, 2.8vw, 2.2rem); text-transform: uppercase; margin-bottom: 10px; color: var(--cream); line-height: 1.1;">
+                        Armá tu pedido ACA
+                    </h3>
+                    <p style="color: var(--muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">
+                        Elegí tus burgers de ojo de bife, papas rústicas y rejilla, tapeos para compartir, cervezas artesanales y tragos. Elegí si querés envío a domicilio o retiro en el local, tu método de pago y mandá la comanda lista a nuestro WhatsApp en un solo clic.
+                    </p>
+                </div>
+                <div>
+                    <a href="menu.html" class="button" style="padding: 16px 32px; font-size: 1rem; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 6px 0 var(--orange-dark);">
+                        <span>ARMAR PEDIDO</span>
+                        <span>🛒</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Banner Destacado -->
+
+        <!-- Historia / Nuestra Onda -->
+        <section class="section-wrap" id="historia" aria-labelledby="historia-title">
+            <div class="story">
+                <div class="story-art">
+                    <img src="local_gutis.jpg" alt="Ambiente cálido y distendido de Guti's en Villa Borguesa, Belén de Escobar" class="story-img" loading="lazy">
+                    <span class="side-note">ACÁ SE COME Y SE DISFRUTA.</span>
+                </div>
+                <div class="story-copy">
+                    <span class="eyebrow">ESTO ES GUTI'S</span>
+                    <h2 id="historia-title">CARNE DE PRIMERA.<br><span>CERVEZAS & BUENOS MOMENTOS.</span></h2>
+                    <p>
+                        En Guti's llevamos la propuesta gastronómica a otro nivel: medallones 100% carne de ojo de bife seleccionada, panes artesanales aireados y salsas caseras con personalidad propia.
+                    </p>
+                    <p>
+                        Sumale canillas de cerveza tirada bien helada, coctelería clásica y de autor por bartenders profesionales, y el mejor ambiente en Villa Borguesa sobre la Ruta 25. Pasá por el local o pedí desde tu sillón.
+                    </p>
+                    <div class="perks">
+                        <span class="perk-pill">✳ Medallón 100% Ojo de Bife</span>
+                        <span class="perk-pill">✳ Cerveza Tirada & Coctelería de Autor</span>
+                        <span class="perk-pill">✳ Complejo Villa Borguesa (RP25)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Ubicación & Mapa Oficial (Con Pin Rojo) -->
+        <section class="section-wrap map-section" id="ubicacion" aria-labelledby="map-title">
+            <div class="section-head">
+                <div>
+                    <span class="eyebrow">LOCAL</span>
+                    <h2 id="map-title">DÓNDE ESTAMOS<br>& CÓMO LLEGAR.</h2>
+                </div>
+                <p>
+                    Vení a visitarnos a Villa Borguesa sobre la Ruta 25 en Belén de Escobar. Te dejamos el mapa con el pin exacto para activar la navegación GPS en tu celular.
+                </p>
+            </div>
+
+            <div class="map-layout">
+                <!-- Tarjeta con Información Oficial -->
+                <div class="map-card-info">
+                    <div class="info-row">
+                        <span class="pin-icon">📍</span>
+                        <div>
+                            <h4>Dirección</h4>
+                            <p><strong>Villa Borguesa, RP25 Local 3</strong>, Belén de Escobar<br>Provincia de Buenos Aires (B1625)<br><small style="color:var(--muted); font-size:0.75rem;">Fácil acceso y estacionamiento en el complejo</small></p>
+                        </div>
+                    </div>
+
+                    <div class="info-row">
+                        <span class="pin-icon">🕒</span>
+                        <div>
+                            <h4>Horario</h4>
+                            <p>Mié a Dom desde 19:30 hs.<br><strong>Sáb y Dom mediodía (12:00 a 16:00 hs.)</strong><br><small style="color:var(--muted); font-size:0.75rem;">Lun y Mar cerrado</small></p>
+                            <span class="tag-active-hours">Mié a Dom</span>
+                        </div>
+                    </div>
+
+                    <div class="info-row">
+                        <span class="pin-icon">📞</span>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p><a href="tel:01126731952">011 2673-1952</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-row">
+                        <span class="pin-icon">📸</span>
+                        <div>
+                            <h4>IG</h4>
+                            <p><a href="https://www.instagram.com/gutis.escobar/" target="_blank" rel="noopener noreferrer">@gutis.escobar ↗</a></p>
+                        </div>
+                    </div>
+
+                    <a href="https://maps.app.goo.gl/oKqWUAHPPs1K6RfB7" target="_blank" rel="noopener noreferrer" class="btn-maps-action">
+                        <span>NAVEGA ↗</span>
+                    </a>
+                </div>
+
+                <!-- Contenedor del Mapa Embebido con Pin Rojo -->
+                <div class="map-frame-wrapper">
+                    <div class="map-pin-overlay">
+                        <span class="red-dot"></span>
+                        <span>Guti's · Villa Borguesa RP25</span>
+                    </div>
+                    <iframe 
+                        title="Mapa interactivo con pin rojo de Guti's en Belén de Escobar"
+                        src="https://maps.google.com/maps?q=-34.3267988,-58.7593188(Guti's%20Burger,%20Beer%20%26%20Drinks)&t=&z=17&ie=UTF8&iwloc=B&output=embed"
+                        loading="lazy" 
+                        allowfullscreen="" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Final de Pedidos -->
+        <section class="order-section" id="pedidos" aria-labelledby="order-title">
+            <div class="order-wrap">
+                <span class="eyebrow">EL PRÓXIMO PASO ES TUYO</span>
+                <h2 id="order-title">¿QUÉ ESPERÁS<br><span>PARA PEDIRTE UNA GUTI'S?</span></h2>
+                <p>
+                    Consultá por promos para compartir, canillas disponibles del día o pedidos de gran volumen con pre encargo. Mandanos un mensaje.
+                </p>
+                <a class="btn-whatsapp-cta" href="https://wa.me/5491126731952?text=Hola%20Guti's%2C%20quiero%20hacer%20un%20pedido!" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 32 32" aria-hidden="true">
+                        <path d="M16.002 2C8.28 2 2 8.28 2 16.002c0 2.597.712 5.034 1.947 7.127L2 30l7.07-1.895A13.94 13.94 0 0 0 16.002 30C23.723 30 30 23.723 30 16.002 30 8.28 23.723 2 16.002 2zm7.98 19.822c-.332.934-1.928 1.787-2.698 1.901-.689.103-1.56.146-2.518-.159-.582-.186-1.326-.432-2.278-.842-4.009-1.733-6.626-5.77-6.827-6.035-.201-.266-1.632-2.169-1.632-4.137s1.034-2.936 1.401-3.336c.367-.4.8-.5 1.066-.5.267 0 .534.003.766.015.246.012.574-.093.899.687.333.801 1.133 2.769 1.233 2.97.1.201.167.433.033.7-.133.267-.2.433-.4.667-.2.233-.42.52-.6.7-.2.2-.408.416-.175.816.233.4 1.036 1.71 2.224 2.769 1.527 1.362 2.815 1.784 3.214 1.984.4.2.634.167.867-.1.233-.267 1-1.167 1.267-1.567.267-.4.533-.333.9-.2s2.333 1.1 2.733 1.3c.4.2.667.3.767.467.1.166.1.966-.233 1.9z"/>
+                    </svg>
+                    <span>WHATSAPP ↗</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <a href="#inicio" class="logo" aria-label="Inicio Guti's">
+            <img src="gutis_logo.png" alt="Logo Guti's Burger, Beer & Drinks" class="logo-img">
+            <span>GUTI'S<span style="color:var(--orange)">.</span></span>
+        </a>
+        <small>© 2026 Guti's · Burger, Beer & Drinks · Belén de Escobar. Desarrollado por Poldev Estudio.</small>
+        <a href="https://www.instagram.com/gutis.escobar/" target="_blank" rel="noopener noreferrer" class="social-link">
+            SEGUINOS EN INSTAGRAM (@gutis.escobar) ↗
+        </a>
+    </footer>
+
+    <!-- Botón Flotante Permanente de WhatsApp (Mobile First) -->
+    <a href="https://wa.me/5491126731952?text=Hola%20Guti's!%20Te%20escribo%20desde%20la%20web%20para%20hacer%20un%20pedido." 
+       class="whatsapp-floating" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       aria-label="Pedir por WhatsApp">
+        <svg viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M16.002 2C8.28 2 2 8.28 2 16.002c0 2.597.712 5.034 1.947 7.127L2 30l7.07-1.895A13.94 13.94 0 0 0 16.002 30C23.723 30 30 23.723 30 16.002 30 8.28 23.723 2 16.002 2zm7.98 19.822c-.332.934-1.928 1.787-2.698 1.901-.689.103-1.56.146-2.518-.159-.582-.186-1.326-.432-2.278-.842-4.009-1.733-6.626-5.77-6.827-6.035-.201-.266-1.632-2.169-1.632-4.137s1.034-2.936 1.401-3.336c.367-.4.8-.5 1.066-.5.267 0 .534.003.766.015.246.012.574-.093.899.687.333.801 1.133 2.769 1.233 2.97.1.201.167.433.033.7-.133.267-.2.433-.4.667-.2.233-.42.52-.6.7-.2.2-.408.416-.175.816.233.4 1.036 1.71 2.224 2.769 1.527 1.362 2.815 1.784 3.214 1.984.4.2.634.167.867-.1.233-.267 1-1.167 1.267-1.567.267-.4.533-.333.9-.2s2.333 1.1 2.733 1.3c.4.2.667.3.767.467.1.166.1.966-.233 1.9z"/>
+        </svg>
+        <span class="wa-text">Acá!</span>
+    </a>
+
+    <!-- Script Navegación Mobile & Hamburguesa -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburgerBtn = document.getElementById('hamburgerBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const mobileNavOverlay = document.getElementById('mobileNavOverlay');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+
+            function toggleMenu() {
+                const isOpen = hamburgerBtn.classList.toggle('is-active');
+                mobileMenu.classList.toggle('is-active', isOpen);
+                mobileNavOverlay.classList.toggle('is-active', isOpen);
+                hamburgerBtn.setAttribute('aria-expanded', isOpen);
+                mobileMenu.setAttribute('aria-hidden', !isOpen);
+                mobileNavOverlay.setAttribute('aria-hidden', !isOpen);
+
+                if (isOpen) {
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    document.body.style.overflow = '';
+                }
+            }
+
+            function closeMenu() {
+                hamburgerBtn.classList.remove('is-active');
+                mobileMenu.classList.remove('is-active');
+                mobileNavOverlay.classList.remove('is-active');
+                hamburgerBtn.setAttribute('aria-expanded', 'false');
+                mobileMenu.setAttribute('aria-hidden', 'true');
+                mobileNavOverlay.setAttribute('aria-hidden', 'true');
+                document.body.style.overflow = '';
+            }
+
+            hamburgerBtn.addEventListener('click', toggleMenu);
+            mobileNavOverlay.addEventListener('click', closeMenu);
+
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', closeMenu);
+            });
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && hamburgerBtn.classList.contains('is-active')) {
+                    closeMenu();
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
