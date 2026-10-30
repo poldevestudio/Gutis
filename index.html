@@ -707,15 +707,24 @@
         .marquee-track {
             display: flex;
             align-items: center;
-            gap: 40px;
-            animation: marquee 24s linear infinite;
-            min-width: 100%;
+            gap: 26px;
+            animation: marquee 17s linear infinite;
+            width: max-content;
         }
 
         .marquee-track span {
             display: inline-flex;
             align-items: center;
-            gap: 12px;
+            line-height: 1;
+        }
+
+        .marquee-star {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.95rem;
+            opacity: 0.85;
+            user-select: none;
         }
 
         @keyframes marquee {
@@ -1684,16 +1693,47 @@
         <!-- Marquee Ticker Infinito -->
         <div class="marquee" aria-hidden="true">
             <div class="marquee-track">
-                <span>✳ 100% CARNE OJO DE BIFE</span>
-                <span>✳ CERVEZA ARTESANAL TIRADA</span>
-                <span>✳ COCTELERÍA & TRAGOS DE AUTOR</span>
-                <span>✳ VILLA BORGUESA · ESCOBAR</span>
-                <span>✳ DELIVERY & TAKE AWAY</span>
-                <span>✳ BURGERS CON ACTITUD</span>
-                <span>✳ PAPAS REJILLA CROCANTES</span>
-                <span>✳ 4.7 ⭐ EN GOOGLE MAPS</span>
-                <span>✳ PEDILAS ONLINE!</span>
-                <span>✳ HAPPY HOUR & AMIGOS</span>
+                <span>100% CARNE OJO DE BIFE</span>
+                <span class="marquee-star">✳</span>
+                <span>CERVEZA ARTESANAL TIRADA</span>
+                <span class="marquee-star">✳</span>
+                <span>COCTELERÍA & TRAGOS DE AUTOR</span>
+                <span class="marquee-star">✳</span>
+                <span>VILLA BORGUESA · ESCOBAR</span>
+                <span class="marquee-star">✳</span>
+                <span>DELIVERY & TAKE AWAY</span>
+                <span class="marquee-star">✳</span>
+                <span>BURGERS CON ACTITUD</span>
+                <span class="marquee-star">✳</span>
+                <span>PAPAS REJILLA CROCANTES</span>
+                <span class="marquee-star">✳</span>
+                <span>4.7 ⭐ EN GOOGLE MAPS</span>
+                <span class="marquee-star">✳</span>
+                <span>PEDILAS ONLINE!</span>
+                <span class="marquee-star">✳</span>
+                <span>HAPPY HOUR & AMIGOS</span>
+                <span class="marquee-star">✳</span>
+                <!-- Bloque idéntico para scroll continuo e infinito -->
+                <span>100% CARNE OJO DE BIFE</span>
+                <span class="marquee-star">✳</span>
+                <span>CERVEZA ARTESANAL TIRADA</span>
+                <span class="marquee-star">✳</span>
+                <span>COCTELERÍA & TRAGOS DE AUTOR</span>
+                <span class="marquee-star">✳</span>
+                <span>VILLA BORGUESA · ESCOBAR</span>
+                <span class="marquee-star">✳</span>
+                <span>DELIVERY & TAKE AWAY</span>
+                <span class="marquee-star">✳</span>
+                <span>BURGERS CON ACTITUD</span>
+                <span class="marquee-star">✳</span>
+                <span>PAPAS REJILLA CROCANTES</span>
+                <span class="marquee-star">✳</span>
+                <span>4.7 ⭐ EN GOOGLE MAPS</span>
+                <span class="marquee-star">✳</span>
+                <span>PEDILAS ONLINE!</span>
+                <span class="marquee-star">✳</span>
+                <span>HAPPY HOUR & AMIGOS</span>
+                <span class="marquee-star">✳</span>
             </div>
         </div>
 
